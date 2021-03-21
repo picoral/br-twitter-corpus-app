@@ -25,7 +25,7 @@ display_tweets <- function(my_data, selected_location, selected_pronoun,
         display_data <- display_data %>%
             filter(our_location == selected_location)
     }
-    
+     
     if (selected_pronoun != "todos") {
         display_data <- display_data %>%
             filter(pronoun_category == selected_pronoun)
