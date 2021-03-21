@@ -30,7 +30,7 @@ display_tweets <- function(my_data, selected_location, selected_pronoun,
         display_data <- display_data %>%
             filter(pronoun_category == selected_pronoun)
     }
-    
+
     if (my_search != "") {
         display_data <- display_data %>%
             filter(grepl(my_search, text, ignore.case = TRUE))
